@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Insurance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Dashboard</a>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+    <header class="landing-header">
+        <h1>Welcome to Insurance Portal</h1>
+        <p>Manage your policies and claims with ease.</p>
+    </header>
+    <main>
+        
+        <section>
+            <h2>Create Policy</h2>
+            <h4>Sample Policy Number:POL100001</h4>
+            <h4>Sample Description:Comprehensive health insurance policy covering hospitalization, outpatient care, and emergency services.</h4>
+            <form id="createPolicyForm">
+                <label for="policyName">Policy Name:</label>
+                <input type="text" id="policyName" placeholder="Enter policy name" required>
+                <label for="policyDetails">Policy Details:</label>
+                <textarea id="policyDetails" placeholder="Enter policy details" required></textarea>
+                <button type="submit">Create Policy</button>
+            </form>
+        </section>
+        <section>
+            <h2>View Policies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Policy Number</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="policiesTable">
+                    <!-- Policies will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Insurance Demo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

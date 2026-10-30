@@ -1,0 +1,221 @@
+/* General body styling with gradient background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    background-image: url("https://www.bing.com/th/id/OIP.2HIX184r17IvA1VRuXdtbAHaFL?w=193&h=135&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2");
+    background-color: white;
+    color: white;
+    background-size: cover;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #e63939;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6c63ff, #007bff);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background: #f4f4f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+button.approveBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.approveBtn:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0.1px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effects for buttons */
+button:hover {
+    transform: scale(1.05);
+}
+/* Landing Page Styles */
+.landing-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    color: white;
+}
+
+.landing-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+/* Ensure form text is black */
+form label, form input, form textarea, form button {
+    color: black; /* Set text color to black */
+}
+section{
+    color: black;
+}
+/* Optional: Ensure placeholder text is also black */
+form input::placeholder,
+form textarea::placeholder {
+    color: #555; /* Slightly lighter black for placeholder text */
+}
+
+.landing-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.landing-buttons {
+    margin-top: 20px;
+}
+
+.landing-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f9;
+    color: #333;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+}
+/* Add subtle animation for the body background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
