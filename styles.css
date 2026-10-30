@@ -104,7 +104,14 @@ button.approveBtn {
 button.approveBtn:hover {
     background-color: #218838;
 }
-
+.container p {
+    color: white;
+    
+}
+.container a {
+    color: red;
+    
+}
 /* Footer styling */
 footer {
     text-align: center;
@@ -134,7 +141,13 @@ button:hover {
     margin-bottom: 10px;
 }
 /* Ensure form text is black */
-form label, form input, form textarea, form button {
+form label, form textarea, form button {
+    color: white; /* Set text color to black */
+}
+.createPolicyForm form textarea {
+    color:black;
+}
+form button {
     color: black; /* Set text color to black */
 }
 section{
@@ -143,7 +156,7 @@ section{
 /* Optional: Ensure placeholder text is also black */
 form input::placeholder,
 form textarea::placeholder {
-    color: #555; /* Slightly lighter black for placeholder text */
+    color:black; /* Slightly lighter black for placeholder text */
 }
 
 .landing-header p {
@@ -159,7 +172,7 @@ form textarea::placeholder {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #007bff;
+    background-color:red;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -190,7 +203,7 @@ form textarea::placeholder {
 }
 
 .feature-item {
-    background: black;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
